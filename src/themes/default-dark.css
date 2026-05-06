@@ -1,0 +1,266 @@
+[data-theme="default-dark"] {
+  --bg-primary: #1e1e1e;
+  --bg-secondary: #252526;
+  --bg-tertiary: #2d2d2d;
+  --text-primary: #d4d4d4;
+  --text-secondary: #9d9d9d;
+  --text-tertiary: #6d6d6d;
+  --accent: #569cd6;
+  --accent-hover: #4a8bc2;
+  --border: #3e3e3e;
+  --border-light: #333333;
+  --sidebar-bg: #252526;
+  --sidebar-border: #3e3e3e;
+  --menu-hover: #2a2d2e;
+  --menu-active: #37373d;
+  --code-bg: #1e1e1e;
+  --code-border: #3e3e3e;
+  --blockquote-border: #3e3e3e;
+  --blockquote-bg: transparent;
+  --table-border: #3e3e3e;
+  --table-header-bg: #2d2d2d;
+  --scrollbar-thumb: #424242;
+  --scrollbar-track: transparent;
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.2);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.4);
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --font-sans: system-ui, -apple-system, sans-serif;
+  --font-mono: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+  --heading-color: #e0e0e0;
+  --link-color: #569cd6;
+  --selection-bg: #264f78;
+}
+
+[data-theme="default-dark"] .ProseMirror {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.7;
+  padding: 40px 60px;
+  color: var(--text-primary);
+  background: var(--bg-primary);
+}
+
+[data-theme="default-dark"] .ProseMirror h1 {
+  font-size: 2em;
+  font-weight: 700;
+  color: var(--heading-color);
+  border-bottom: 1px solid var(--border-light);
+  padding-bottom: 0.3em;
+  margin-top: 1.6em;
+  margin-bottom: 0.6em;
+  line-height: 1.3;
+}
+
+[data-theme="default-dark"] .ProseMirror h2 {
+  font-size: 1.6em;
+  font-weight: 600;
+  color: var(--heading-color);
+  border-bottom: 1px solid var(--border-light);
+  padding-bottom: 0.25em;
+  margin-top: 1.4em;
+  margin-bottom: 0.5em;
+  line-height: 1.35;
+}
+
+[data-theme="default-dark"] .ProseMirror h3 {
+  font-size: 1.3em;
+  font-weight: 600;
+  color: var(--heading-color);
+  margin-top: 1.3em;
+  margin-bottom: 0.4em;
+  line-height: 1.4;
+}
+
+[data-theme="default-dark"] .ProseMirror h4 {
+  font-size: 1.1em;
+  font-weight: 600;
+  color: var(--heading-color);
+  margin-top: 1.2em;
+  margin-bottom: 0.3em;
+  line-height: 1.45;
+}
+
+[data-theme="default-dark"] .ProseMirror h5 {
+  font-size: 1em;
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin-top: 1.1em;
+  margin-bottom: 0.3em;
+  line-height: 1.5;
+}
+
+[data-theme="default-dark"] .ProseMirror h6 {
+  font-size: 0.9em;
+  font-weight: 600;
+  color: var(--text-tertiary);
+  margin-top: 1em;
+  margin-bottom: 0.3em;
+  line-height: 1.5;
+}
+
+[data-theme="default-dark"] .ProseMirror p {
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+[data-theme="default-dark"] .ProseMirror blockquote {
+  border-left: 4px solid var(--blockquote-border);
+  background: var(--blockquote-bg);
+  padding: 0.5em 1em;
+  margin: 0 0 1em 0;
+  color: var(--text-secondary);
+}
+
+[data-theme="default-dark"] .ProseMirror blockquote blockquote {
+  margin-top: 0.5em;
+}
+
+[data-theme="default-dark"] .ProseMirror code {
+  font-family: var(--font-mono);
+  font-size: 0.875em;
+  background: var(--code-bg);
+  border: 1px solid var(--code-border);
+  border-radius: var(--radius-sm);
+  padding: 0.15em 0.4em;
+  color: #ce9178;
+}
+
+[data-theme="default-dark"] .ProseMirror pre {
+  font-family: var(--font-mono);
+  font-size: 0.875em;
+  background: var(--code-bg);
+  border: 1px solid var(--code-border);
+  border-radius: var(--radius-md);
+  padding: 1em;
+  margin: 0 0 1em 0;
+  overflow-x: auto;
+  line-height: 1.6;
+}
+
+[data-theme="default-dark"] .ProseMirror pre code {
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: inherit;
+  border-radius: 0;
+  color: var(--text-primary);
+}
+
+[data-theme="default-dark"] .ProseMirror table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 0 0 1em 0;
+  overflow: hidden;
+}
+
+[data-theme="default-dark"] .ProseMirror table th,
+[data-theme="default-dark"] .ProseMirror table td {
+  border: 1px solid var(--table-border);
+  padding: 8px 12px;
+  text-align: left;
+}
+
+[data-theme="default-dark"] .ProseMirror table th {
+  background: var(--table-header-bg);
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+[data-theme="default-dark"] .ProseMirror table tr:nth-child(even) td {
+  background: var(--bg-secondary);
+}
+
+[data-theme="default-dark"] .ProseMirror hr {
+  border: none;
+  height: 1px;
+  background: var(--border);
+  margin: 2em 0;
+}
+
+[data-theme="default-dark"] .ProseMirror ul,
+[data-theme="default-dark"] .ProseMirror ol {
+  padding-left: 2em;
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+[data-theme="default-dark"] .ProseMirror li {
+  margin-bottom: 0.25em;
+}
+
+[data-theme="default-dark"] .ProseMirror li > ul,
+[data-theme="default-dark"] .ProseMirror li > ol {
+  margin-top: 0.25em;
+  margin-bottom: 0;
+}
+
+[data-theme="default-dark"] .ProseMirror img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--radius-sm);
+  margin: 0.5em 0;
+  display: block;
+}
+
+[data-theme="default-dark"] .ProseMirror .task-list-item {
+  list-style: none;
+  position: relative;
+  padding-left: 0;
+  margin-left: -2em;
+}
+
+[data-theme="default-dark"] .ProseMirror .task-list-item input[type="checkbox"] {
+  margin-right: 0.5em;
+  accent-color: var(--accent);
+  vertical-align: middle;
+  position: relative;
+  top: -1px;
+}
+
+[data-theme="default-dark"] .ProseMirror .math-block {
+  font-family: var(--font-mono);
+  font-size: 0.95em;
+  background: var(--code-bg);
+  border: 1px solid var(--code-border);
+  border-radius: var(--radius-md);
+  padding: 1em;
+  margin: 0 0 1em 0;
+  text-align: center;
+  overflow-x: auto;
+}
+
+[data-theme="default-dark"] .ProseMirror .inline-math {
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+}
+
+[data-theme="default-dark"] .ProseMirror a {
+  color: var(--link-color);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.15s ease;
+}
+
+[data-theme="default-dark"] .ProseMirror a:hover {
+  border-bottom-color: var(--link-color);
+}
+
+[data-theme="default-dark"] .ProseMirror ::selection {
+  background: var(--selection-bg);
+}
+
+[data-theme="default-dark"] .ProseMirror strong {
+  font-weight: 700;
+}
+
+[data-theme="default-dark"] .ProseMirror em {
+  font-style: italic;
+}
+
+[data-theme="default-dark"] .ProseMirror del {
+  text-decoration: line-through;
+  color: var(--text-tertiary);
+}

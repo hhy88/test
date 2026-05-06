@@ -1,0 +1,266 @@
+[data-theme="graphite"] {
+  --bg-primary: #2b2b2b;
+  --bg-secondary: #323232;
+  --bg-tertiary: #3a3a3a;
+  --text-primary: #c8c8c8;
+  --text-secondary: #8e8e8e;
+  --text-tertiary: #6a6a6a;
+  --accent: #8a9aa8;
+  --accent-hover: #9dadb8;
+  --border: #454545;
+  --border-light: #3c3c3c;
+  --sidebar-bg: #2f2f2f;
+  --sidebar-border: #454545;
+  --menu-hover: #383838;
+  --menu-active: #404040;
+  --code-bg: #272727;
+  --code-border: #454545;
+  --blockquote-border: #505050;
+  --blockquote-bg: transparent;
+  --table-border: #454545;
+  --table-header-bg: #323232;
+  --scrollbar-thumb: #555555;
+  --scrollbar-track: transparent;
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.25);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.4);
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --font-sans: system-ui, -apple-system, sans-serif;
+  --font-mono: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+  --heading-color: #d8d8d8;
+  --link-color: #8a9aa8;
+  --selection-bg: #4a5568;
+}
+
+[data-theme="graphite"] .ProseMirror {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.7;
+  padding: 40px 60px;
+  color: var(--text-primary);
+  background: var(--bg-primary);
+}
+
+[data-theme="graphite"] .ProseMirror h1 {
+  font-size: 2em;
+  font-weight: 700;
+  color: var(--heading-color);
+  border-bottom: 1px solid var(--border-light);
+  padding-bottom: 0.3em;
+  margin-top: 1.6em;
+  margin-bottom: 0.6em;
+  line-height: 1.3;
+}
+
+[data-theme="graphite"] .ProseMirror h2 {
+  font-size: 1.6em;
+  font-weight: 600;
+  color: var(--heading-color);
+  border-bottom: 1px solid var(--border-light);
+  padding-bottom: 0.25em;
+  margin-top: 1.4em;
+  margin-bottom: 0.5em;
+  line-height: 1.35;
+}
+
+[data-theme="graphite"] .ProseMirror h3 {
+  font-size: 1.3em;
+  font-weight: 600;
+  color: var(--heading-color);
+  margin-top: 1.3em;
+  margin-bottom: 0.4em;
+  line-height: 1.4;
+}
+
+[data-theme="graphite"] .ProseMirror h4 {
+  font-size: 1.1em;
+  font-weight: 600;
+  color: var(--heading-color);
+  margin-top: 1.2em;
+  margin-bottom: 0.3em;
+  line-height: 1.45;
+}
+
+[data-theme="graphite"] .ProseMirror h5 {
+  font-size: 1em;
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin-top: 1.1em;
+  margin-bottom: 0.3em;
+  line-height: 1.5;
+}
+
+[data-theme="graphite"] .ProseMirror h6 {
+  font-size: 0.9em;
+  font-weight: 600;
+  color: var(--text-tertiary);
+  margin-top: 1em;
+  margin-bottom: 0.3em;
+  line-height: 1.5;
+}
+
+[data-theme="graphite"] .ProseMirror p {
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+[data-theme="graphite"] .ProseMirror blockquote {
+  border-left: 4px solid var(--blockquote-border);
+  background: var(--blockquote-bg);
+  padding: 0.5em 1em;
+  margin: 0 0 1em 0;
+  color: var(--text-secondary);
+}
+
+[data-theme="graphite"] .ProseMirror blockquote blockquote {
+  margin-top: 0.5em;
+}
+
+[data-theme="graphite"] .ProseMirror code {
+  font-family: var(--font-mono);
+  font-size: 0.875em;
+  background: var(--code-bg);
+  border: 1px solid var(--code-border);
+  border-radius: var(--radius-sm);
+  padding: 0.15em 0.4em;
+  color: #b0b8c0;
+}
+
+[data-theme="graphite"] .ProseMirror pre {
+  font-family: var(--font-mono);
+  font-size: 0.875em;
+  background: var(--code-bg);
+  border: 1px solid var(--code-border);
+  border-radius: var(--radius-md);
+  padding: 1em;
+  margin: 0 0 1em 0;
+  overflow-x: auto;
+  line-height: 1.6;
+}
+
+[data-theme="graphite"] .ProseMirror pre code {
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: inherit;
+  border-radius: 0;
+  color: var(--text-primary);
+}
+
+[data-theme="graphite"] .ProseMirror table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 0 0 1em 0;
+  overflow: hidden;
+}
+
+[data-theme="graphite"] .ProseMirror table th,
+[data-theme="graphite"] .ProseMirror table td {
+  border: 1px solid var(--table-border);
+  padding: 8px 12px;
+  text-align: left;
+}
+
+[data-theme="graphite"] .ProseMirror table th {
+  background: var(--table-header-bg);
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+[data-theme="graphite"] .ProseMirror table tr:nth-child(even) td {
+  background: var(--bg-secondary);
+}
+
+[data-theme="graphite"] .ProseMirror hr {
+  border: none;
+  height: 1px;
+  background: var(--border);
+  margin: 2em 0;
+}
+
+[data-theme="graphite"] .ProseMirror ul,
+[data-theme="graphite"] .ProseMirror ol {
+  padding-left: 2em;
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+[data-theme="graphite"] .ProseMirror li {
+  margin-bottom: 0.25em;
+}
+
+[data-theme="graphite"] .ProseMirror li > ul,
+[data-theme="graphite"] .ProseMirror li > ol {
+  margin-top: 0.25em;
+  margin-bottom: 0;
+}
+
+[data-theme="graphite"] .ProseMirror img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--radius-sm);
+  margin: 0.5em 0;
+  display: block;
+}
+
+[data-theme="graphite"] .ProseMirror .task-list-item {
+  list-style: none;
+  position: relative;
+  padding-left: 0;
+  margin-left: -2em;
+}
+
+[data-theme="graphite"] .ProseMirror .task-list-item input[type="checkbox"] {
+  margin-right: 0.5em;
+  accent-color: var(--accent);
+  vertical-align: middle;
+  position: relative;
+  top: -1px;
+}
+
+[data-theme="graphite"] .ProseMirror .math-block {
+  font-family: var(--font-mono);
+  font-size: 0.95em;
+  background: var(--code-bg);
+  border: 1px solid var(--code-border);
+  border-radius: var(--radius-md);
+  padding: 1em;
+  margin: 0 0 1em 0;
+  text-align: center;
+  overflow-x: auto;
+}
+
+[data-theme="graphite"] .ProseMirror .inline-math {
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+}
+
+[data-theme="graphite"] .ProseMirror a {
+  color: var(--link-color);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.15s ease;
+}
+
+[data-theme="graphite"] .ProseMirror a:hover {
+  border-bottom-color: var(--link-color);
+}
+
+[data-theme="graphite"] .ProseMirror ::selection {
+  background: var(--selection-bg);
+}
+
+[data-theme="graphite"] .ProseMirror strong {
+  font-weight: 700;
+}
+
+[data-theme="graphite"] .ProseMirror em {
+  font-style: italic;
+}
+
+[data-theme="graphite"] .ProseMirror del {
+  text-decoration: line-through;
+  color: var(--text-tertiary);
+}
